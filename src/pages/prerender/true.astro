@@ -1,0 +1,12 @@
+---
+import Now from '../../components/Now.astro';
+import Layout from '../../layouts/Layout.astro';
+
+export const prerender = true;
+---
+
+<Layout>
+	<h1>prerender = true</h1>
+	<p>静的ページなのでビルドしたときの日時が表示される</p>
+	<Now />
+</Layout>

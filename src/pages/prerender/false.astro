@@ -1,0 +1,12 @@
+---
+import Now from '../../components/Now.astro';
+import Layout from '../../layouts/Layout.astro';
+
+export const prerender = false;
+---
+
+<Layout>
+	<h1>prerender = false</h1>
+	<p>サーバーレンダリングなので毎回変わる</p>
+	<Now />
+</Layout>
